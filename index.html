@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-family: 'Karla', sans-serif;      
+    }
+    body{
+      background-color: gray;
+      position: relative;
+      width: 1440px;
+      height: 1000px;
+    }
+    main{
+      width: 720px;     
+      background-color: white;
+      border-radius: 5px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    h1, h2, p{
+      padding: 10px;
+    }
+    .retan{
+      padding: 20px;
+    }
+    .retan h1{
+      color: hsl(179, 62%, 43%);
+      font-weight: 700;
+    }
+    .retan h2{
+      color: hsl(71, 73%, 54%);
+      font-weight: 400;
+    }
+    .retan p{
+      color: hsl(204, 10%, 80%);
+      font-weight: 400;
+    }
+    .quad{
+      
+      color: white;
+      box-sizing: border-box;
+      width: 50%;
+      float: left;
+      padding: 50px;      
+    }
+    .quad h2, p{
+      font-weight: 400;      
+    }
+    #price{
+      font-size: 30px;
+      padding: 2px;
+    }
+    #cont{
+      color: hsl(204, 43%, 93%);      
+    }
+    #small{
+      font-size: 16px;
+    }
+    .quad button{
+      background-color: hsl(71, 73%, 54%);
+      color: white;
+      width: 100%;
+      padding: 22px;
+      border-radius: 5px;
+    }    
+    #left{
+      border-radius:0px 0px 0px 5px ;
+      background-color: hsl(179, 63%, 40%);
+    }
+    #right{
+      border-radius:0px 0px 5px 0px ;
+      background-color: hsl(179, 62%, 43%);
+    }
+    @media screen and (max-width: 600px) {
+      main{
+        width: 375px;
+      }
+      .quad{
+        float: none;
+        width: 100%;
+      }
+      #left{
+      border-radius:0px 0px 0px 0px ;
+      }
+      #right{
+      border-radius:0px 0px 5px 5px ;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="retan">
+      <h1>Join our community</h1>
+      <h2>30-day, hassle-free money back guarantee</h2>
+      <p>Gain access to our full library of tutorials along with expert code reviews.<br>
+      Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+
+    <div class="quad" id="left">
+      <h2>Monthly Subscription</h2>
+      <p><span id="price">&dollar;29</span> <span id="cont">per month</span><br>
+      Full access for less than &dollar;1 a day</p>
+      <button>Sign Up</button>
+    </div>
+
+    <div class="quad" id="right">
+      <h2>Why Us</h2>
+      <p id="small">
+        Tutorials by industry experts
+        Peer &amp; expert code review
+        Coding exercises
+        Access to our GitHub repos
+        Community forum
+        Flashcard decks
+        New videos every week
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+</html>
